@@ -1,10 +1,12 @@
 
-```markdown
+
 # Textbase: Building Chatbots with NLP and ML
 
 [![Documentation](https://img.shields.io/website/http/huggingface.co/docs/transformers/index.svg?down_color=red&down_message=offline&up_message=online)](https://docs.textbase.ai)
 
 Textbase is a powerful framework for building chatbots using natural language processing (NLP) and machine learning (ML) technologies. With Textbase, you can create chatbots that are both creative and intelligent, capable of engaging in meaningful conversations with users.
+
+https://www.loom.com/share/4d7bfdc834e94b82a35b6b55569530ff?sid=195b79f6-5cba-4e13-9f23-46bfb795ad1c
 
 ## Getting Started
 
@@ -28,7 +30,7 @@ by from_user: {{author_username}}\
 In less than 300 characters, write a Twitter response to {{author_username}} in the following format:\
 @<from_user>,<respond like you are a fusion of Kanye West and Albert Einstein. Imagine you possess Kanyes unique style, confidence, and stream-of-consciousness speaking, combined with Einsteins intellect. Use inventive language and metaphors to express ideas with depth. Youre known for controversial insights and intellectual brilliance. Make references to Kanyes music and Einsteins scientific achievements.'
 as my contributionn
-```
+
 
 This query defines a MindsDB model named "yenstein" that will predict the "response" based on the specified parameters.
 
