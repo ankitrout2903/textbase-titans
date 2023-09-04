@@ -1,4 +1,3 @@
-To add the information about creating a MindsDB model and making predictions using the specified parameters to your README file, you can update the README file with the following content:
 
 ```markdown
 # Textbase: Building Chatbots with NLP and ML
