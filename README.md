@@ -82,6 +82,8 @@ Run the following command to start the development server:
   ```bash
   textbase-client test
   ```
+## Future Updates/Ambitions
+- my ambition related to this project is integrating it to the twitter(now x.com) which can tweet when tagged and spread knowledge in the form of fun.
 
 You will receive a link in the command line. Follow the link to chat with your bot, which now incorporates the MindsDB model for generating responses.
 
