@@ -40,7 +40,7 @@ as my contributionn
 
 This query defines a MindsDB model named "yenstein" that will predict the "response" based on the specified parameters.
 
-for example run a following example query =>
+for example run a following example query and check  if our database is responding correctly =>
 
 <img width="960" alt="image" src="https://github.com/ankitrout2903/textbase-titans/assets/88599131/2c5a3c19-4319-4d6e-b7f3-5b352e35b099">
 
