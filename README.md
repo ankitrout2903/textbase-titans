@@ -1,48 +1,63 @@
-<p align="center">
-  <picture>
-    <img alt="Textbase python library" src="assets/logo.svg" width="352" height="59" style="max-width: 100%;">
-  </picture>
-  <br/>
-  <br/>
-</p>
+To add the information about creating a MindsDB model and making predictions using the specified parameters to your README file, you can update the README file with the following content:
 
-<p align="center">
-    <a href="https://docs.textbase.ai">
-        <img alt="Documentation" src="https://img.shields.io/website/http/huggingface.co/docs/transformers/index.svg?down_color=red&down_message=offline&up_message=online">
-    </a>
-</p>
+```markdown
+# Textbase: Building Chatbots with NLP and ML
 
-<h3 align="center">
-    <p>✨ Textbase is a framework for building chatbots using NLP and ML. ✨</p>
-</h3>
+[![Documentation](https://img.shields.io/website/http/huggingface.co/docs/transformers/index.svg?down_color=red&down_message=offline&up_message=online)](https://docs.textbase.ai)
 
-<h3 align="center">
-    <a href="https://textbase.ai"><img src="assets/banner.png"></a>
-</h3>
+Textbase is a powerful framework for building chatbots using natural language processing (NLP) and machine learning (ML) technologies. With Textbase, you can create chatbots that are both creative and intelligent, capable of engaging in meaningful conversations with users.
 
-Just implement the `on_message` function in `main.py` and Textbase will take care of the rest :)
+## Getting Started
 
-Since it is just Python you can use whatever models, libraries, vector databases and APIs you want.
+To use MindsDB in your Textbase chatbot, follow these steps:
 
-Coming soon:
-- [x] [PyPI package](https://pypi.org/project/textbase-client/)
-- [x] Easy web deployment via [textbase deploy](/docs/deployment/deploy-from-cli)
-- [ ] SMS integration
-- [ ] Native integration of other models (Claude, Llama, ...)
+### 1. Create a MindsDB Model
 
-![Demo Deploy GIF](assets/textbase-deploy.gif)
+To integrate MindsDB into your chatbot, you'll need to create a MindsDB model. Use the following SQL query to create your model:
+
+```sql
+CREATE MODEL mindsdb.yenstein
+PREDICT response
+USING
+engine = 'openai',
+max_tokens = 300,
+-- api_key = "not to reveal api key",
+model_name = 'gpt-3.5-turbo',
+temperature: 0.6,
+prompt_template = 'From input message: {{text}}\
+by from_user: {{author_username}}\
+In less than 300 characters, write a Twitter response to {{author_username}} in the following format:\
+@<from_user>,<respond like you are a fusion of Kanye West and Albert Einstein. Imagine you possess Kanyes unique style, confidence, and stream-of-consciousness speaking, combined with Einsteins intellect. Use inventive language and metaphors to express ideas with depth. Youre known for controversial insights and intellectual brilliance. Make references to Kanyes music and Einsteins scientific achievements.'
+as my contributionn
+```
+
+This query defines a MindsDB model named "yenstein" that will predict the "response" based on the specified parameters.
+
+### 2. Integration in `main.py`
+
+Implement the `on_message` function in `main.py` of your Textbase chatbot. Textbase will handle the integration with MindsDB, allowing you to generate responses using the MindsDB model you created.
+
+```python
+# Implement the on_message function in main.py
+# Textbase will handle the integration with MindsDB
+# Your bot logic goes here
+```
+
+That's it! Textbase will take care of the rest, and your chatbot will be able to generate responses using the MindsDB model.
 
 ## Installation
-Make sure you have `python version >=3.9.0`, it's always good to follow the [docs](https://docs.textbase.ai/get-started/installation) 👈🏻
-### 1. Through pip
+
+Make sure you have Python version >= 3.9.0 installed. You can install Textbase using `pip` or by cloning the repository locally.
+
+### Install via pip
+
 ```bash
 pip install textbase-client
 ```
 
-### 2. Local installation
-Clone the repository and install the dependencies using [Poetry](https://python-poetry.org/) (you might have to [install Poetry](https://python-poetry.org/docs/#installation) first).
+### Local Installation
 
-For proper details see [here]()
+Clone the repository and install the dependencies using Poetry:
 
 ```bash
 git clone https://github.com/cofactoryai/textbase
@@ -51,29 +66,29 @@ poetry shell
 poetry install
 ```
 
-## Start development server
+## Start Development Server
 
-> If you're using the default template, **remember to set the OpenAI API key** in `main.py`.
+Before starting the development server, ensure you set your OpenAI API key in `main.py`.
 
-Run the following command:
-- if installed locally
-    ```bash
-    poetry run python textbase/textbase_cli.py test
-    ```
-- if installed through pip
-    ```bash
-    textbase-client test
-    ```
-Response:
-```bash
-Path to the main.py file: examples/openai-bot/main.py # You can create a main.py by yourself and add that path here. NOTE: The path should not be in quotes
-```
-Now go to the link in blue color which is shown on the CLI and you will be able to chat with your bot!
-![Local UI](assets/test_command.png)
+Run the following command to start the development server:
 
-### `Other commands have been mentioned in the documentaion website.` [Have a look](https://docs.textbase.ai/usage) 😃!
+- If installed locally:
 
+  ```bash
+  poetry run python textbase/textbase_cli.py test
+  ```
+
+- If installed via pip:
+
+  ```bash
+  textbase-client test
+  ```
+
+You will receive a link in the command line. Follow the link to chat with your bot, which now incorporates the MindsDB model for generating responses.
 
 ## Contributions
 
-Contributions are welcome! Please open an issue or create a pull request.
+Contributions are welcome! Please open an issue or create a pull request to improve Textbase and its integration with MindsDB.
+```
+
+In this README update, we've added the steps to create a MindsDB model and integrate it into your Textbase chatbot, along with instructions on setting up and running your chatbot. Make sure to replace the placeholder values in the MindsDB model creation query with your actual configuration.
