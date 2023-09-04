@@ -40,6 +40,10 @@ as my contributionn
 
 This query defines a MindsDB model named "yenstein" that will predict the "response" based on the specified parameters.
 
+for example run a following example query =>
+
+<img width="960" alt="image" src="https://github.com/ankitrout2903/textbase-titans/assets/88599131/2c5a3c19-4319-4d6e-b7f3-5b352e35b099">
+
 
 
 That's it! Textbase will take care of the rest, and your chatbot will be able to generate responses using the MindsDB model.
