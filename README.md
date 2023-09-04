@@ -34,15 +34,7 @@ as my contributionn
 
 This query defines a MindsDB model named "yenstein" that will predict the "response" based on the specified parameters.
 
-### 2. Integration in `main.py`
 
-Implement the `on_message` function in `main.py` of your Textbase chatbot. Textbase will handle the integration with MindsDB, allowing you to generate responses using the MindsDB model you created.
-
-```python
-# Implement the on_message function in main.py
-# Textbase will handle the integration with MindsDB
-# Your bot logic goes here
-```
 
 That's it! Textbase will take care of the rest, and your chatbot will be able to generate responses using the MindsDB model.
 
