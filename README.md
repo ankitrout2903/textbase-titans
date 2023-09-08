@@ -8,6 +8,13 @@ Textbase is a powerful framework for building chatbots using natural language pr
 
 https://www.loom.com/share/4d7bfdc834e94b82a35b6b55569530ff?sid=195b79f6-5cba-4e13-9f23-46bfb795ad1c
 
+## My contribution
+
+- In my opinion, the textbase library already had everything needed, except for a database. So, for an AI library, I introduced an AI database.
+- MindsDB abstracts LLMs, time series, regression, and classification models as virtual tables (AI-Tables). Using familiar SQL statements to interact with AI Tables increases accessibility within organizations, enabling development teams to easily level-up their existing skills for building and maintaining AI/ML applications.
+- We can use MindsDB to store user chats, train AI models on this data, and understand user behaviors. This can enable us to provide future chat suggestions and recommendations based on their preferences.
+
+
 ## usage 
 
 - we can use Mindsdb to store and train a large amount of data on our AI model.
