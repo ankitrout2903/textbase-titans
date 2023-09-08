@@ -19,7 +19,8 @@ https://www.loom.com/share/4d7bfdc834e94b82a35b6b55569530ff?sid=195b79f6-5cba-4e
 
 - we can use Mindsdb to store and train a large amount of data on our AI model.
 - We can fuse many famous personalities who have been passed away right now and talk to them and see how would have they responded.
-- So what next Harry potter physics teacher or a tommy pet dog who could talk if he could , there is no limit to our imaginatioon and limit on the power of AI.
+- for example we can talk to newton and tell him that mankind has invented rocket to fly to moon and see what it responds.
+- So what next Harry potter physics teacher or a tommy pet dog who could talk if he could or a birdie physics teacher who can teach us how to fly , there is no limit to our imaginatioon and limit on the power of AI.
 
 ## Getting Started
 
